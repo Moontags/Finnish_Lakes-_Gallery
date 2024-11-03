@@ -2,7 +2,7 @@
 
 **Finnish Lakes Gallery** is a responsive web gallery showcasing Finland's 10 largest lakes with images, descriptions, and additional information. The project emphasizes a clear, visually appealing layout with smooth navigation and is optimized for viewing on multiple devices.
 
-![Finnish Lakes Gallery Screenshot](image/saimaa.webp)  
+![Finnish Lakes Gallery Screenshot](image/kemijarvi.jpg)  
 _A screenshot of the gallery, showcasing Saimaa, the largest lake in Finland._
 
 ## Project Overview
@@ -74,4 +74,4 @@ Images and lake information were sourced from:
 ## Deployment
 
 Once published, the Finnish Lakes Gallery will be accessible at:
-[Link to Finnish Lakes Gallery](https://your-git-page-link-here.com)
+[Link to Finnish Lakes Gallery](https://moontags.github.io/Finnish_Lakes-_Gallery/)
