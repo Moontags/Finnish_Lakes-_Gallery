@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+
+  <title>Finish Lakes Gallery</title>
+</head>
+<body>
+  <header class="header-blur">
+    <div class="language-switch">
+      <button id="lang-fi" onclick="setLanguage('fi')">🇫🇮 Suomi</button>
+      <button id="lang-en" onclick="setLanguage('en')">🇬🇧 English</button>
+    </div>
+    <h1 id="lake-title"></h1>
+    <h3 id="lake-description"></h3>
+  </header>
+
+
+  <section class="image-slider">
+    <div class="slide active" data-title-fi="Suomen järviä" data-description-fi="Tutustu Suomen suurimpien järvien upeisiin maisemiin" data-info-fi="Suomen 10 suurinta järveä tarjoavat upeat mahdollisuudet retkeilyyn, kalastukseen ja puhtaasta luonnosta nauttimiseen" data-title-en="Lakes of Finland" data-description-en="Discover Finland's largest lakes with beautiful landscapes." data-info-en="Finland's top 10 largest lakes offer fantastic opportunities for recreation, fishing, and pure nature.">
+      <img src="image/saimaa.avif" alt="Suomen järvet">
+    </div>
+  
+    <div class="slide" data-title-fi="Saimaa" data-description-fi="Suomen suurin järvi tarjoaa upeita retki- ja kalastuskohteita" data-info-fi="Sijainti: Etelä-Savo, Etelä-Karjala | Pinta-ala: 4,400 km² | Saimaannorpan koti" data-title-en="Saimaa" data-description-en="Finland's largest lake offers excellent hiking and fishing spots" data-info-en="Location: South Savo, South Karelia | Area: 4,400 km² | Home of the Saimaa ringed seal">
+      <img src="image/saimaa.webp" alt="Saimaa">
+    </div>
+  
+    <div class="slide" data-title-fi="Päijänne" data-description-fi="Hiekkarantoja laguuneineen ja tärkein vedenlähde Helsingille" data-info-fi="Sijainti: Keski-Suomi, Päijät-Häme | Pinta-ala: 1,080 km² | Suomen syvin järvi 95 metriä" data-title-en="Päijänne" data-description-en="Known for sandy beaches and lagoons, primary water source for Helsinki" data-info-en="Location: Central Finland, Päijät-Häme | Area: 1,080 km² | Finland's deepest lake at 95 meters">
+      <img src="image/paijanne.jpg" alt="Päijänne">
+    </div>
+  
+    <div class="slide" data-title-fi="Inarijärvi" data-description-fi="Lappi tarjoaa erämaaluontoa ja puhtaan veden" data-info-fi="Sijainti: Lappi | Pinta-ala: 1,040 km² | Lapin maakunnan suurin järvi" data-title-en="Lake Inari" data-description-en="Lapland offers pristine wilderness and clear waters" data-info-en="Location: Lapland | Area: 1,040 km² | Largest lake in Lapland">
+      <img src="image/inari.avif" alt="Inarijärvi">
+    </div>
+  
+    <div class="slide" data-title-fi="Pielinen" data-description-fi="Pielinen on puhdas, karu ja erämainen järvi" data-info-fi="Sijainti: Pohjois-Karjala | Pinta-ala: 894 km² | Tunnettu Kolin kansallismaisemasta" data-title-en="Lake Pielinen" data-description-en="Known for its pure, rugged wilderness and Koli National Landscape" data-info-en="Location: North Karelia | Area: 894 km² | Famous for Koli National Landscape">
+      <img src="image/pielinen.webp" alt="Pielinen">
+    </div>
+  
+    <div class="slide" data-title-fi="Oulujärvi" data-description-fi="Kainuun alueen järvi on tunnettu kalaisista vesistään" data-info-fi="Sijainti: Kainuu | Pinta-ala: 887 km² | Suosittu hiekkaranta kohde" data-title-en="Lake Oulujärvi" data-description-en="Known for its fish-rich waters" data-info-en="Location: Kainuu | Area: 887 km² | Popular beach destination">
+      <img src="image/oulu.jpg" alt="Oulujärvi">
+    </div>
+  
+    <div class="slide" data-title-fi="Orivesi" data-description-fi="Orivesi on tunnettu luonnonkauneudestaan" data-info-fi="Sijainti: Itä-Suomi | Pinta-ala: 712 km² | Upea kohde vesiretkeilijöille" data-title-en="Lake Orivesi" data-description-en="Known for its scenic beauty" data-info-en="Location: Eastern Finland | Area: 712 km² | Great for water activities">
+      <img src="image/orivesi.jpg" alt="Orivesi">
+    </div>
+  
+    <div class="slide" data-title-fi="Pihlajavesi" data-description-fi="Pihlajavesi on osa Saimaata" data-info-fi="Sijainti: Etelä-Savo | Pinta-ala: 712 km² | Historiallisia saaristokohteita" data-title-en="Lake Pihlajavesi" data-description-en="Part of the Saimaa lake system" data-info-en="Location: South Savo | Area: 712 km² | Historic island spots">
+      <img src="image/pihlajavesi.jpg" alt="Pihlajavesi">
+    </div>
+  
+    <div class="slide" data-title-fi="Haukivesi" data-description-fi="Haukivesi kuuluu Vuoksen vesistöön" data-info-fi="Sijainti: Etelä-Savo, Pohjois-Savo | Pinta-ala: 560 km² | Runsaasti haukea" data-title-en="Lake Haukivesi" data-description-en="Part of the Vuoksi river basin" data-info-en="Location: South Savo, North Savo | Area: 560 km² | Known for its pike fish population">
+      <img src="image/Haukivesi1.jpg" alt="Haukivesi">
+    </div>
+  
+    <div class="slide" data-title-fi="Keitele" data-description-fi="Keski-Suomen suurimpia järviä" data-info-fi="Sijainti: Keski-Suomi | Pinta-ala: 493 km² | Järvessä on paljon niemiä" data-title-en="Lake Keitele" data-description-en="One of Central Finland's largest lakes" data-info-en="Location: Central Finland | Area: 493 km² | Known for its numerous peninsulas">
+      <img src="image/keitele.jpg" alt="Keitele">
+    </div>
+  
+    <div class="slide" data-title-fi="Kallavesi" data-description-fi="Kuopion alueen järvi on talvella suosittu aktiviteettikeskus" data-info-fi="Sijainti: Pohjois-Savo | Pinta-ala: 473 km² | Kuuluu Vuoksen vesistöön" data-title-en="Lake Kallavesi" data-description-en="Popular winter activity hub in Kuopio region" data-info-en="Location: North Savo | Area: 473 km² | Part of the Vuoksi river basin">
+      <img src="image/kallavesi.jpg" alt="Kallavesi">
+    </div>
+  </section>
+  
+
+  <div class="navigation">
+    <button class="prev-btn">←</button>
+    <button class="next-btn">→</button>
+  </div>
+
+  <div class="info-box">
+    <h3>Info:</h3>
+    <ul id="lake-info">
+     
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

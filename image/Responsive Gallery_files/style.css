@@ -1,0 +1,218 @@
+/* Perusasetukset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "GRAD" 0;
+}
+
+/* Header-blur-asetus */
+.header-blur {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  z-index: 10;
+  padding: 10px;
+}
+
+.header-blur h1 {
+  font-size: 3rem; /* Suurentaa otsikon kokoa */
+  font-family: "Roboto Serif", serif;
+  margin-bottom: 22px;
+  text-shadow: rgba(0, 0, 0, 0.2); /* Lisää varjoa */
+  letter-spacing: 1.6px;
+}
+
+.header-blur h3 {
+  font-family: "Roboto Serif", serif;
+  font-size: 1.6em; /* Suurentaa kuvaustekstin kokoa */
+  margin-top: 0;
+  text-shadow: rgba(0, 0, 0, 0.2); /* Lisää varjoa */
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+/* Kuvakaruselli */
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Takaa, että kuva peittää koko alueen */
+}
+
+.navigation {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  margin: 18px;
+  font-size: 28px;
+  color: rgba(255, 255, 255);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navigation button:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: rgba(255, 255, 255);
+  transform: scale(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Perusasetukset */
+.info-box {
+  position: fixed;
+  bottom: 80px; /* Oletuskorkeus */
+  left: 20px;
+  width: 420px;
+  padding: 15px;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transform: translateX(0);
+}
+
+.info-box h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+  .header-blur {
+    height: 30vh;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 30px 30px;
+  }
+
+  .header-blur h1,
+  .header-blur h3 {
+    font-family: "Roboto Serif", serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Hieno varjo lisää kontrastia */
+  }
+
+  .navigation button {
+    font-size: 26px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100vh; /* Kuvan täytyy peittää koko näkymä */
+    object-fit: cover;
+  }
+}
+
+/* Suuremmilla näytöillä */
+@media (min-width: 1024px) {
+  .info-box {
+    left: 50%;
+    bottom: 160px; /* Nostaa laatikkoa suuremmilla näytöillä */
+    transform: translateX(-50%);
+  }
+}
+
+/* Keskikokoisilla näytöillä */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .info-box {
+    width: 360px;
+    background: rgba(0, 0, 0, 0.3);
+    left: 50%;
+    bottom: 160px; /* Nostaa laatikkoa keskikokoisilla näytöillä */
+    transform: translateX(-50%);
+    font-size: 1em;
+  }
+}
+
+/* Pienemmillä näytöillä */
+@media (max-width: 768px) and (min-width: 481px) {
+  .info-box {
+    width: 360px;
+    background: rgba(0, 0, 0, 0.3);
+    left: 50%;
+    bottom: 160px; /* Pitää laatikon korkealla pienemmillä näytöillä */
+    transform: translateX(-50%);
+    font-size: 1em;
+  }
+}
+
+/* Hyvin pienillä näytöillä */
+@media (max-width: 480px) {
+  .info-box {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    left: 50%;
+    bottom: 140px; /* Nostaa laatikkoa pienimmillä näytöillä */
+    transform: translateX(-50%);
+    font-size: 1em;
+    margin-bottom: 2rem;
+  }
+}

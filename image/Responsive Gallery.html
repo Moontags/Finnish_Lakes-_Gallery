@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+
+
+
+
+  <title>Responsive Gallery</title>
+<link rel="stylesheet" href="./Responsive Gallery_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Responsive Gallery_files/css2" rel="stylesheet"><link href="./Responsive Gallery_files/css2(1)" rel="stylesheet"></head>
+<body>
+  <header class="header-blur">
+    <h1 id="lake-title">Suomen järviä</h1>
+    <h3 id="lake-description">Tutustu Suomen suurimpien järvien upeisiin maisemiin</h3>
+  </header>
+
+  <section class="image-slider">
+   
+    <div class="slide active" data-title="Suomen järviä" data-description="Tutustu Suomen suurimpien järvien upeisiin maisemiin" data-info="Suomen 10 suurinta järveä tarjoavat upeat mahdollisuudet retkeilyyn, kalastukseen ja puhtaasta luonnosta nauttimiseen">
+      <img src="./Responsive Gallery_files/saimaa.avif" alt="Suomen järvet">
+    </div>
+
+    <div class="slide" data-title="Saimaa" data-description="Suomen suurin järvi tarjoaa upeita retki- ja kalastuskohteita" data-info="Sijainti: Etelä-Savo, Etelä-Karjala | Pinta-ala: 4,400 km² | Saimaannorpan koti">
+      <img src="./Responsive Gallery_files/saimaa.webp" alt="Saimaa">
+    </div>
+    <div class="slide" data-title="Päijänne" data-description="Hiekkarantoja laguuneineen ja tärkein vedenlähde Helsingille" data-info="Sijainti: Keski-Suomi, Päijät-Häme | Pinta-ala: 1,080 km² | Suomen syvin järvi 95 metriä">
+      <img src="./Responsive Gallery_files/paijanne.jpg" alt="Päijänne">
+    </div>
+    <div class="slide" data-title="Inarijärvi" data-description="Lappi tarjoaa erämaaluontoa ja puhtaan veden" data-info="Sijainti: Lappi | Pinta-ala: 1,040 km² | Lapin maakunnan suurin järvi">
+      <img src="./Responsive Gallery_files/inari.avif" alt="Inarijärvi">
+    </div>
+    <div class="slide" data-title="Pielinen" data-description="Pielinen on puhdas, karu ja erämainen järvi" data-info="Sijainti: Pohjois-Karjala | Pinta-ala: 894 km² | Tunnettu Kolin kansallismaisemasta">
+      <img src="./Responsive Gallery_files/pielinen.webp" alt="Pielinen">
+    </div>
+    <div class="slide" data-title="Oulujärvi" data-description="Kainuun alueen järvi on tunnettu kalaisista vesistään" data-info="Sijainti: Kainuu | Pinta-ala: 887 km² | Suosittu hiekkaranta kohde">
+      <img src="./Responsive Gallery_files/oulu.jpg" alt="Oulujärvi">
+    </div>
+    <div class="slide" data-title="Orivesi" data-description="Orivesi on tunnettu luonnonkauneudestaan" data-info="Sijainti: Itä-Suomi | Pinta-ala: 712 km² | Upea kohde vesiretkeilijöille">
+      <img src="./Responsive Gallery_files/orivesi.jpg" alt="Orivesi">
+    </div>
+    <div class="slide" data-title="Pihlajavesi" data-description="Pihlajavesi on osa Saimaata" data-info="Sijainti: Etelä-Savo | Pinta-ala: 712 km² | Historiallisia saaristokohteita">
+      <img src="./Responsive Gallery_files/pihlajavesi.jpg" alt="Pihlajavesi">
+    </div>
+    <div class="slide" data-title="Haukivesi" data-description="Haukivesi kuuluu Vuoksen vesistöön" data-info="Sijainti: Etelä-Savo, Pohjois-Savo| Pinta-ala: 	560 km² | Runsaasti haukea">
+      <img src="./Responsive Gallery_files/Haukivesi1.jpg" alt="Haukivesi">
+    </div>
+    <div class="slide" data-title="Keitele" data-description="Keski-Suomen suurimpia järviä" data-info="Sijainti: Keski-Suomi | Pinta-ala: 493 km² | Järvessä on paljon niemiä">
+      <img src="./Responsive Gallery_files/keitele.jpg" alt="Keitele">
+    </div>
+    <div class="slide" data-title="Kallavesi" data-description="Kuopion alueen järvi on talvella suosittu aktiviteettikeskus" data-info="Sijainti: Pohjois-Savo | Pinta-ala: 473 km² | Kuuluu Vuoksen vesistöön">
+      <img src="./Responsive Gallery_files/kallavesi.jpg" alt="Kallavesi">
+    </div>
+  </section>
+
+  <div class="navigation">
+    <button class="prev-btn">←</button>
+    <button class="next-btn">→</button>
+  </div>
+
+  <div class="info-box">
+    <h3>Tiedot:</h3>
+    <ul id="lake-info"><li>Suomen 10 suurinta järveä tarjoavat upeat mahdollisuudet retkeilyyn, kalastukseen ja puhtaasta luonnosta nauttimiseen</li></ul>
+  </div>
+
+  <script src="./Responsive Gallery_files/script.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

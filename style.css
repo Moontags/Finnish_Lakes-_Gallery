@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100, "GRAD" 0;
+}
+
+/* Header */
+
+.header-blur {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 20vh;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  z-index: 10;
+  padding: 10px;
+}
+
+.header-blur h1 {
+  font-size: 3rem;
+  margin-bottom: 22px;
+  letter-spacing: 1.6px;
+}
+
+.header-blur h3 {
+  font-size: 1.6em;
+  letter-spacing: 1.1px;
+  text-align: center;
+}
+
+/* Slider */
+
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Navigation */
+
+.navigation {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+/* Button */
+
+.navigation button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+.navigation button {
+  padding: 10px 20px;
+  margin: 18px;
+  font-size: 28px;
+  color: rgb(204, 248, 224);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navigation button:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(162, 243, 198);
+  transform: scale(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Info section */
+
+.info-box {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 420px;
+  padding: 15px;
+  background: transparent;
+  background: rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transform: translateX(0);
+}
+
+.info-box h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-box ul li {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Language is Here */
+
+.language-switch {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.language-switch button {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+  justify-content: space-around;
+}
+
+.language-switch button:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+/* Media is Here */
+
+@media (max-width: 600px) {
+  .header-blur {
+    height: 35vh;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 30px 30px;
+  }
+
+  .header-blur h1 {
+    font-size: 1.8rem;
+    margin-top: 60px;
+  }
+
+  .navigation button {
+    font-size: 26px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+/* Info Media is Here */
+
+@media (min-width: 1024px) {
+  .info-box {
+    left: 50%;
+    bottom: 160px;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .info-box {
+    width: 360px;
+    left: 50%;
+    bottom: 160px;
+    transform: translateX(-50%);
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .info-box {
+    width: 360px;
+    background: rgba(0, 0, 0, 0.3);
+    left: 50%;
+    bottom: 160px;
+    transform: translateX(-50%);
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-box {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.3);
+    left: 50%;
+    bottom: 140px;
+    transform: translateX(-50%);
+    font-size: 0.85em;
+    margin-bottom: 2rem;
+  }
+}
