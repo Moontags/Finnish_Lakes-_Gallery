@@ -129,7 +129,7 @@
   position: fixed;
   bottom: 80px;
   left: 20px;
-  width: 420px;
+  width: 440px;
   padding: 15px;
   background: rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
@@ -219,7 +219,7 @@
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .info-box {
-    width: 360px;
+    width: 380px;
     left: 50%;
     bottom: 160px;
     transform: translateX(-50%);
@@ -229,7 +229,7 @@
 
 @media (max-width: 768px) and (min-width: 481px) {
   .info-box {
-    width: 360px;
+    width: 380px;
     background: rgba(0, 0, 0, 0.3);
     left: 50%;
     bottom: 160px;
