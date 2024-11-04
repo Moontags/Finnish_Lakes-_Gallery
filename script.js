@@ -1,4 +1,4 @@
-// Initialize language as Finnish by default
+// Finnish by default
 let currentLanguage = "fi";
 
 const lakeTitle = document.getElementById("lake-title");
@@ -6,7 +6,7 @@ const lakeDescription = document.getElementById("lake-description");
 const lakeInfo = document.getElementById("lake-info");
 const infoTitle = document.getElementById("info-title");
 
-// Function to update content based on the selected language
+// Update content based on the selected language
 function updateLakeInfo(slide) {
   lakeTitle.textContent = slide.getAttribute(`data-title-${currentLanguage}`);
   lakeDescription.textContent = slide.getAttribute(
@@ -45,11 +45,11 @@ const prevBtn = document.querySelector(".prev-btn");
 const slides = document.querySelectorAll(".slide");
 let slideNumber = 0;
 
-// Show the first slide
+// First slide
 slides[slideNumber].classList.add("active");
 updateLakeInfo(slides[slideNumber]);
 
-// Next button functionality
+// Previous button
 nextBtn.onclick = () => {
   if (slideNumber < slides.length - 1) {
     // Check if it's not the last slide
@@ -60,7 +60,7 @@ nextBtn.onclick = () => {
   }
 };
 
-// Previous button functionality
+// Previous button
 prevBtn.onclick = () => {
   if (slideNumber > 0) {
     // Check if it's not the first slide
