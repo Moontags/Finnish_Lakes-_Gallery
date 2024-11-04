@@ -70,6 +70,7 @@ Images and lake information were sourced from:
 
 - [Wikipedia](https://fi.wikipedia.org/wiki/Suomen_j%C3%A4rvet)
 - Municipal websites and official Finnish tourism portals
+- Images and information about the lakes have been sourced from publicly accessible municipal websites and official Finnish tourism portals. These resources are used to inform and illustrate the site in accordance with public domain use policies and fair use guidelines.
 
 ## Deployment
 
