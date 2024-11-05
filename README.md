@@ -71,6 +71,10 @@ Images and lake information were sourced from:
 - Municipal websites and official Finnish tourism portals
 - Images and information about the lakes have been sourced from publicly accessible municipal websites and official Finnish tourism portals. These resources are used to inform and illustrate the site in accordance with public domain use policies and fair use guidelines.
 
+### Image Usage Restriction
+
+The images included in this project are for non-commercial use only. Commercial use, reproduction, or distribution of these images is prohibited without prior permission.
+
 ## Deployment
 
 Once published, the Finnish Lakes Gallery will be accessible at:
