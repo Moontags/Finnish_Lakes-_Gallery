@@ -10,6 +10,7 @@
 }
 
 /* Header */
+
 .header-blur {
   position: fixed;
   top: 0;
@@ -39,6 +40,7 @@
 }
 
 /* Slider */
+
 .image-slider {
   display: flex;
   align-items: center;
@@ -76,6 +78,7 @@
 }
 
 /* Tooltips */
+
 .slide .tooltip {
   position: absolute;
   bottom: 10%;
@@ -95,6 +98,7 @@
 }
 
 /* Navigation */
+
 .navigation {
   position: absolute;
   bottom: 5%;
@@ -129,7 +133,7 @@
   position: fixed;
   bottom: 80px;
   left: 20px;
-  width: 440px;
+  width: 480px;
   padding: 15px;
   background: rgba(0, 0, 0, 0.3);
   letter-spacing: 1px;
@@ -157,6 +161,7 @@
 }
 
 /* Language Switch */
+
 .language-switch {
   position: absolute;
   top: 10px;
@@ -166,6 +171,8 @@
   justify-content: space-between;
   padding: 0 20px;
 }
+
+/* Language Button */
 
 .language-switch button {
   background: rgba(255, 255, 255, 0.3);
@@ -185,6 +192,7 @@
 }
 
 /* Media Queries */
+
 @media (max-width: 600px) {
   .header-blur {
     height: 33vh;
@@ -211,6 +219,7 @@
 }
 
 /* Info Box Media Queries */
+
 @media (min-width: 1024px) {
   .info-box {
     left: 50%;
@@ -221,7 +230,7 @@
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .info-box {
-    width: 380px;
+    width: 420px;
     left: 50%;
     bottom: 160px;
     transform: translateX(-50%);
@@ -231,7 +240,7 @@
 
 @media (max-width: 768px) and (min-width: 481px) {
   .info-box {
-    width: 380px;
+    width: 420px;
     background: rgba(0, 0, 0, 0.3);
     left: 50%;
     bottom: 160px;
