@@ -105,12 +105,12 @@
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 6em;
 }
 
 .navigation button {
   padding: 10px 20px;
-  font-size: 22px;
+  font-size: 2em;
   color: rgb(192, 250, 218);
   background: rgba(0, 0, 0, 0.5);
   border: none;
