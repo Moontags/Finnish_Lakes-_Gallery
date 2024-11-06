@@ -86,9 +86,9 @@
   transition: opacity 0.3s ease;
 }
 
-.slide:hover .tooltip {
+/* .slide:hover .tooltip {
   opacity: 1;
-}
+} */
 
 /* Navigation */
 
